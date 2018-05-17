@@ -310,7 +310,7 @@ struct Transaction
 
     Memo memo;
 
-    Operation operations<100>;
+    Operation operations<10240>;
 
     // reserved for future use
     union switch (int v)
