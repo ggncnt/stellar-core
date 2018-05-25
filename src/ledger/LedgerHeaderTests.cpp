@@ -46,7 +46,7 @@ TEST_CASE("genesisledger", "[ledger]")
     REQUIRE(header.idPool == 0);
     REQUIRE(header.baseFee == 100);
     REQUIRE(header.baseReserve == 100000000);
-    REQUIRE(header.maxTxSetSize == 100);
+    REQUIRE(header.maxTxSetSize == 10240);
     REQUIRE(header.skipList.size() == 4);
     REQUIRE(header.skipList[0] == Hash{});
     REQUIRE(header.skipList[1] == Hash{});
